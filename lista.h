@@ -1,15 +1,20 @@
-#ifndef LISTA_H
+ifndef LISTA_H
 #define LISTA_H
 
-#include "pokemon.h"
+#include "aluno.h"
 
-typedef struct cel Celula;
 typedef struct lista Lista;
+typedef struct cel Celula;
 
-Lista* inicializaListaVazia();
-void insere(Lista* lista, tPokemon* pokemon);
-void retira(Lista* lista, char* nome);
+//inicialização
+Lista* inic_Lista();
+//inserção
+void insere(Lista* lista, Aluno* aluno);
+//retirada
+void retira(Lista* lista, int mat);
+//impressão
 void imprime(Lista* lista);
-void release(Lista* lista);
+//liberação
+void libera(Lista* lista);
 
-#endif
+#endif 
