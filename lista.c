@@ -1,5 +1,4 @@
 #include "lista.h"
-#include "celula.h"
 #include <stdio.h>
 #include <stdlib.h>
 
